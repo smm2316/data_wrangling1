@@ -11,3 +11,28 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
+## Load in a dataset
+
+```{r}
+litters_data = read_csv(file = "./data/FAS_litters.csv")
+litters_data = janitor::clean_names(litters_data)
+
+fas_pups = read_csv(file = "./data/FAS_pups.csv")
+fas_pups = janitor::clean_names(fas_pups)
+
+  
+```
+## Read in an excel file
+
+```{r}
+library(readxl)
+mlb11_data = read_excel(
+  path = "./data/mlb11.xlsx",
+  range = "A1:D7")
+```
+
+## Read in a SAS file
+
+```{r}
+library(haven)
+pulse_data = read_sas("./data/public_pulse_data.sas7bdat")
