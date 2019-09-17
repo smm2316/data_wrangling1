@@ -1,5 +1,7 @@
 ---
-title: "data_wrangling_1"
+title: "Data Wrangling 1"
+author: Sarah McLarnan
+date: 2019-09-17
 output: github_document
 ---
 
